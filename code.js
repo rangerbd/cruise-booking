@@ -62,12 +62,12 @@ function add(){
     const firstInputNumber=parseFloat(firstInput);
 
     const subInput=  ecoInputNumber * 100 + firstInputNumber * 150;
-    document.getElementById("subtotal").innerText=subInput;
+    document.getElementById("subtotal").innerText=  '$'+subInput;
 
     const tax= subInput * .1;
-    document.getElementById("vat").innerText= tax;
+    document.getElementById("vat").innerText= '$'+ tax;
 
     const total= subInput + tax;
-    document.getElementById("total").innerText=total;
+    document.getElementById("total").innerText= '$'+total;
 
 }
