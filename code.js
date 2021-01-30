@@ -71,3 +71,12 @@ function add(){
     document.getElementById("total").innerText= '$'+total;
 
 }
+
+// extra section
+const bookBtn=document.getElementById("book-btn");
+bookBtn.addEventListener("click",function(){
+    const fullContent=document.getElementById("fullcontent");
+    fullContent.style.display="none";
+    const popUp=document.getElementById("pop-up");
+    popUp.style.display="block";
+})
